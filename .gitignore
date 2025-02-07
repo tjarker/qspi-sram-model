@@ -1,0 +1,7 @@
+/.vscode
+/.idea
+/.metals
+/project
+/target
+/*.vcd
+/*.pdf
