@@ -226,16 +226,6 @@ trait SpiInterface {
   def setSo(value: Int): Unit
 }
 
-class Assertion(condition: () => Boolean) {
-  def check(): Unit = {
-    if (!condition()) throw new AssertionError()
-  }
-}
-
-object Assertion {
-  def apply(condition: => Boolean): Assertion = new Assertion(() => condition)
-}
-
 
 class SynchronizationPoint {
 
